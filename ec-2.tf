@@ -4,6 +4,7 @@ provider "aws" {
   screte_key = "NwYmhVtZQY9LoLfBysLNrbA6zmfXVGAnM/wD9mou"
 }
 
-resource "aws_s3_bucket" "ec2" {
-  bucket = navi@1234
+resource "aws_instance" "this" {
+  ami                       = "ami-026b57f3c383c2eec"
+  instance_type             = "t2.micro"
 }
